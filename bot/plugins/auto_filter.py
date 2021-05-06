@@ -184,7 +184,7 @@ async def auto_filter(bot, update):
         try:
             await bot.send_message(
                 chat_id = update.chat.id,
-                text=f"Hi\r\nFound {(len_results)} Results For Your Query: <b>{query}</b>",
+                text=f"<b>Powered By @T2Links</b>\n<b>If U didn't get any Movie , Tag @admin with your Movie Name </b>\r\nFound {(len_results)} Here Is The Result For <b>{query}</b> 👇",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
