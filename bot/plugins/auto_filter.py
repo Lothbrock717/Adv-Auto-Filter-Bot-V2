@@ -137,7 +137,8 @@ async def auto_filter(bot, update):
             InlineKeyboardButton(f"🔰 Page 1/{len_result if len_result < max_pages else max_pages} 🔰", callback_data="ignore")
         ])
         
-        
+        result[0].append([ InlineKeyboardButton(f"🎗 Join Our Channel 🎗", url="https://t.me/joinchat/WKJLlPbAgx6QkKbf
+") ])        
         # if show_invite is True Append invite link buttons
         if show_invite:
             
@@ -184,7 +185,7 @@ async def auto_filter(bot, update):
         try:
             await bot.send_message(
                 chat_id = update.chat.id,
-                text=f"<b>Powered By @T2Links</b>\n<b>If U didn't get any Movie , Tag @admin with your Movie Name </b>\r\nFound {(len_results)} Here Is The Result For <b>{query}</b> 👇",
+                text=f"<b>Powered By @T2Links</b>\n\n<b>If U didn't get any Movie , Tag @admin with your Movie Name </b>\r\n\nFound {(len_results)} Here Is The Result For <b>{query}</b> 👇",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
