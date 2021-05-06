@@ -38,7 +38,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/share/url?url=https://t.me/CrazyFilterTamil2Bot?start=(file_id)"
+                                    'Join', url="https://t.me/Tamil_Latest_Films"
                                 )
                         ]
                     ]
@@ -57,7 +57,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/tamil_latest_films"
+                                    'Join', url="https://t.me/tamil_latest_films"
                                 )
                         ]
                     ]
@@ -76,7 +76,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://tamil_latest_films"
+                                    'Join', url="https://tamil_latest_films"
                                 )
                         ]
                     ]
@@ -89,7 +89,7 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/tamil_latest_films'),
+        InlineKeyboardButton('Join', url='https://t.me/tamil_latest_films'),
         InlineKeyboardButton('Source Code 🧾', url ='https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot-V2')
     ],[
         InlineKeyboardButton('Support 🛠', url='https://t.me/tamil_latest_films')
