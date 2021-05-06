@@ -38,7 +38,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/share/url?url=https://t.me/CrazyFilterTamil2Bot?start=file_id"
+                                    'Developers', url="https://t.me/share/url?url=https://t.me/CrazyFilterTamil2Bot?start=(file_id)"
                                 )
                         ]
                     ]
