@@ -107,14 +107,14 @@ async def auto_filter(bot, update):
             )
         
     else:
-        await bot.send_message(
+        send_message = await bot.send_message(
                 chat_id = update.chat.id,
                 text=f"<b>No Movies Found</b>\n\n<b>If U didn't get any Movie , Tag @admin with your Movie Name </b>",                
                 parse_mode="html",
                 reply_to_message_id=update.message_id
             )
         await asyncio.sleep(5) # in seconds
-        await bot.send_message.delete()
+        await send_message.delete()
 
         return # return if no files found for that query
     
