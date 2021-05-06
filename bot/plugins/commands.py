@@ -23,7 +23,7 @@ async def start(bot, update):
         if (file_id or file_type) == None:
             return
         
-        caption = file_caption if file_caption != ("" or None) else ("<code>" + file_name + "</code>")
+        caption = file_caption if file_caption != ("" or None) else ("</b>" + file_name + "</b>")
         
         if file_type == "document":
         
@@ -38,7 +38,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/CrazyBotsz"
+                                    'Developers', url="https://t.me/tamil_latest_films"
                                 )
                         ]
                     ]
@@ -57,7 +57,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/CrazyBotsz"
+                                    'Developers', url="https://t.me/tamil_latest_films"
                                 )
                         ]
                     ]
@@ -76,7 +76,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/CrazyBotsz"
+                                    'Developers', url="https://tamil_latest_films"
                                 )
                         ]
                     ]
@@ -89,10 +89,10 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
+        InlineKeyboardButton('Developers', url='https://t.me/tamil_latest_films'),
         InlineKeyboardButton('Source Code 🧾', url ='https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot-V2')
     ],[
-        InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
+        InlineKeyboardButton('Support 🛠', url='https://t.me/tamil_latest_films')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
