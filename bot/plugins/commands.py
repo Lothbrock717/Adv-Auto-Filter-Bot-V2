@@ -92,7 +92,7 @@ async def start(bot, update):
         InlineKeyboardButton('Join', url='https://t.me/tamil_latest_films'),
         InlineKeyboardButton('Source Code 🧾', url ='https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot-V2')
     ],[
-        InlineKeyboardButton('Support 🛠', url='https://t.me/tamil_latest_films')
+        InlineKeyboardButton('Support 🛠', url='https://t.me/t2links')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
