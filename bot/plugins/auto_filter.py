@@ -109,7 +109,7 @@ async def auto_filter(bot, update):
     else:
         send_message = await bot.send_message(
                 chat_id = update.chat.id,
-                text=f"<b>No Movies Found</b>\n\n<b>If U didn't get any Movie , Tag @admin with your Movie Name </b>",                
+                text=f"<b>No Movies Found</b>\n\n<b>If U didn't get any Movie , Tag @admin with your Movie Name </b>\n\nOr Type The Movie Name With Properly With Appropriate Year</b>",                
                 parse_mode="html",
                 reply_to_message_id=update.message_id
             )
@@ -123,6 +123,7 @@ async def auto_filter(bot, update):
         return
     
     else:
+        result[0].append([ InlineKeyboardButton(f"🎗 Join Our Channel 🎗", url="https://t.me/tamil_latest_films") ])
     
         result = []
         # seperating total files into chunks to make as seperate pages
