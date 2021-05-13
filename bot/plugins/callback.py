@@ -1280,7 +1280,7 @@ async def cb_show_invites(bot, update: CallbackQuery):
             [
                 InlineKeyboardButton
                     (
-                        "Back", callback_data=f"config({chat_id})"
+                        "🔙 Back", callback_data=f"config({chat_id})"
                     )
             ]
         ]
@@ -1296,7 +1296,7 @@ async def cb_show_invites(bot, update: CallbackQuery):
             [
                 InlineKeyboardButton
                     (
-                        "Back", callback_data=f"config({chat_id})"
+                        "🔙 Back", callback_data=f"config({chat_id})"
                     )
             ]
         ]
@@ -1341,7 +1341,7 @@ async def cb_pm_file(bot, update: CallbackQuery):
             [
                 InlineKeyboardButton
                     (
-                        "Back", callback_data=f"config({chat_id})"
+                        "🔙 Back", callback_data=f"config({chat_id})"
                     )
             ]
         ]
@@ -1357,7 +1357,7 @@ async def cb_pm_file(bot, update: CallbackQuery):
             [
                 InlineKeyboardButton
                     (
-                        "Back", callback_data=f"config({chat_id})"
+                        "🔙 Back", callback_data=f"config({chat_id})"
                     )
             ]
         ]
@@ -1436,7 +1436,7 @@ async def cb_accuracy(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "Back", callback_data=f"config({chat_id})"
+                    "🔙 Back", callback_data=f"config({chat_id})"
                 )
         ]
     ]
@@ -1523,12 +1523,12 @@ async def cb_set(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "Back", callback_data=f"config({chat_id})"
+                    "🔙 Back", callback_data=f"config({chat_id})"
                 ),
             
             InlineKeyboardButton
                 (
-                    "Close", callback_data="close"
+                    "Close 🔐", callback_data="close"
                 )
         ]
     ]
@@ -1568,12 +1568,12 @@ async def cb_status(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "Back", callback_data="settings"
+                    "🔙 Back", callback_data="settings"
                 ),
             
             InlineKeyboardButton
                 (
-                    "Close", callback_data="close"
+                    "Close 🔐", callback_data="close"
                 )
         ]
     ]
@@ -1613,13 +1613,13 @@ async def cb_about(bot, update: CallbackQuery):
                 
             InlineKeyboardButton
                 (
-                    "Back", callback_data="settings"
+                    "🔙 Back", callback_data="settings"
                 )
         ],
         [
             InlineKeyboardButton
                 (
-                    "Close", callback_data="close"
+                    "Close 🔐", callback_data="close"
                 )
         ]
     ]
@@ -1662,7 +1662,7 @@ async def callback_data(bot, update: CallbackQuery):
             InlineKeyboardButton('Home', callback_data='start'),
             InlineKeyboardButton('About', callback_data='about')
         ],[
-            InlineKeyboardButton('Close', callback_data='close')
+            InlineKeyboardButton('Close 🔐', callback_data='close')
         ]]
     
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1678,7 +1678,7 @@ async def callback_data(bot, update: CallbackQuery):
     elif query_data == "about": 
         buttons = [[
             InlineKeyboardButton('Home', callback_data='start'),
-            InlineKeyboardButton('Close', callback_data='close')
+            InlineKeyboardButton('Close 🔐', callback_data='close')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
