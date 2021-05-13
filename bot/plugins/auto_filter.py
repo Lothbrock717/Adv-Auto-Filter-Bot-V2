@@ -122,8 +122,7 @@ async def auto_filter(bot, update):
     if len(results) == 0: # double check
         return
     
-    else:
-        result[0].append([ InlineKeyboardButton(f"🎗 Join Our Channel 🎗", url="https://t.me/tamil_latest_films") ])
+    else: 
     
         result = []
         # seperating total files into chunks to make as seperate pages
