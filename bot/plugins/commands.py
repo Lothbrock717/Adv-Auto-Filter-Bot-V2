@@ -18,7 +18,7 @@ async def start(bot, update):
         file_uid = False
     
     if file_uid:
-        file_id, file_name, file_caption, file_type = await db.get_file(file_uid)
+        file_id, file_name, file_caption, file_type, file_size = await db.get_file(file_uid)
         
         if (file_id or file_type) == None:
             return
