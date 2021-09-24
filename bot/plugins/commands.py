@@ -23,7 +23,7 @@ async def start(bot, update):
         if (file_id or file_type) == None:
             return
         
-        caption = file_caption if file_caption != ("" or None) else ("🎬  "+ "<code>" + file_name + "</code>" + "\n\n〽️ Powered By @T2Links\n\nShare and Support us❤️ \n🎯 @Tamil_Latest_Films")
+        caption = file_caption if file_caption != ("" or None) else ("🎬  "+ "<code>" + file_name + "</code>" + "\n\n〽️ Powered By @Disney_Movies_Collections\n\nShare and Support us❤️ \n🎯 @Disney_Movies_Collections")
         
         if file_type == "document":
         
@@ -38,7 +38,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Join', url="https://t.me/Tamil_Latest_Films"
+                                    'Join', url="https://t.me/Disney_Movies_Collections"
                                 )
                         ]
                     ]
@@ -57,7 +57,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Join', url="https://t.me/tamil_latest_films"
+                                    'Join', url="https://t.me/Disney_Movies_Collections"
                                 )
                         ]
                     ]
@@ -76,7 +76,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Join', url="https://tamil_latest_films"
+                                    'Join', url="https://t.me/Disney_Movies_Collections"
                                 )
                         ]
                     ]
@@ -89,10 +89,10 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('Join', url='https://t.me/tamil_latest_films'),
+        InlineKeyboardButton('Join', url='https://t.me/Disney_Movies_Collections'),
         InlineKeyboardButton('Source Code 🧾', url ='https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot-V2')
     ],[
-        InlineKeyboardButton('Support 🛠', url='https://t.me/t2links')
+        InlineKeyboardButton('Support 🛠', url='https://t.me/Disney_Movies_Collections')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
